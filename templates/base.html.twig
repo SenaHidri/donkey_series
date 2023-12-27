@@ -6,7 +6,7 @@
 			{% block title %}Welcome!
 			{% endblock %}
 		</title>
-		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		<link rel="icon" href="./build/images/donkey-logo.svg">
 		{% block stylesheets %}
 			{{ encore_entry_link_tags('app') }}
 		{% endblock %}
@@ -16,10 +16,17 @@
 		{% endblock %}
 	</head>
 	<body>
-		<header>
-			{% include '_navbar.html.twig' %}
+		<header class="text-white py-3">
+			<div class="container-fluid d-flex align-items-center">
+				<div class="navbar-brand d-flex align-items-center">
+					<img src="./build/images/donkey-logo.svg" alt="Donkey Series Logo" class="img-fluid custom-logo">
+					<h1 class="font-weight-bold d-inline-block ml-3 mb-0">DONKEY SERIES</h1>
+				</div>
+				<div class="ml-auto">
+					{% include '_navbar.html.twig' %}
+				</div>
+			</div>
 		</header>
 		{% block body %}{% endblock %}
-
 	</body>
-</html>
+</html></body></html>

@@ -1,6 +1,32 @@
 @import "~bootstrap/scss/bootstrap";
 
-$main-background-color: pink;
+/***************Variables*****************/
+$main-background-color:#141414 ;
+$main-text-color: white;
+$active-background-color: white;
+
+/*******************Main blocks**********************/
 body {
     background-color: $main-background-color;
+}
+
+nav {
+    background-color: $main-background-color;
+}
+
+.nav-link {
+    color: $main-text-color;
+}
+
+ .active {
+    background-color: $active-background-color;
+}
+
+h1 {
+    color: $main-text-color;
+}
+
+.custom-logo {
+    max-width: 100px;
+    height:auto;
 }
