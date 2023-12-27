@@ -4,6 +4,16 @@
  * We recommend including the built version of this JavaScript file
  * (and its CSS file) in your base layout (base.html.twig).
  */
+const $ = require('jquery');
 
+require('bootstrap');
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
+//import logoPath from './images/donkey-logo.svg';
+
+/*
+//Displaying logo
+let logoElement =document.createElement('img');
+logoElement.src = logoPath;
+logoElement.alt = "Logo Donkey Series";
+document.body.appendChild(logoElement);*/
