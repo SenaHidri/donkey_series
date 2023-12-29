@@ -4,8 +4,28 @@
 {% endblock %}
 
 {% block body %}
-	
-	<div>
-		<h1>Donkey Series Index</h1>
+
+	<div class="container">
+		<div class="row">
+			{% for program in programs %}
+				<div class="col-md-4 mb-4">
+					<div class="card" style="width: 18rem;">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">{{ program.title }}
+								- Catégorie:
+								{{ program.category.name }}</h5>
+							<p class="card-text">{{ program.summary }}</p>
+							<a href="{{ path('program_show_by_id', { id: program.id }) }}" class="btn btn-primary">Voir détails</a>
+						</div>
+					</div>
+				</div>
+				<!-- Un simple if esthétique, pour changer l'affichage quand  la rangée a moins de 3 cards -->
+				{% if loop.index % 3 == 0 %}
+				</div>
+				<div class="row">
+				{% endif %}
+			{% endfor %}
+		</div>
 	</div>
 {% endblock %}
