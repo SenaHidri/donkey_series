@@ -9,11 +9,6 @@ const $ = require('jquery');
 require('bootstrap');
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
-//import logoPath from './images/donkey-logo.svg';
+import logoPath from './images/logo-dkc-dark.svg';
 
-/*
-//Displaying logo
-let logoElement =document.createElement('img');
-logoElement.src = logoPath;
-logoElement.alt = "Logo Donkey Series";
-document.body.appendChild(logoElement);*/
+symfony console doctrine:schema:validate
