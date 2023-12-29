@@ -11,4 +11,3 @@ require('bootstrap');
 import './styles/app.scss';
 import logoPath from './images/logo-dkc-dark.svg';
 
-symfony console doctrine:schema:validate
